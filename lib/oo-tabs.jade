@@ -1,6 +1,6 @@
 template(name="ooTabs")
   div(ooTabs)
     each tabs.tabsArray
-      div(ooTab-item="{{isActive}}:brand")
+      div(ooTab-item="" class="{{isActive}}")
         button.js-setActiveTab(btn="block text:neutral-dim neutral-tint uppercase material small") {{label}}
   +Template.dynamic template=activeTabTemplate
