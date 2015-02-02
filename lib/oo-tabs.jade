@@ -3,5 +3,8 @@ template(name="ooTabs")
     each tabs.tabsArray
       div(ooTab-item="" class="{{isActive}}")
         button.js-setActiveTab(btn="block text:neutral-dim neutral-tint uppercase material small") {{label}}
-  +with tabs.parentData
+  if tabs.parentData
+    +with tabs.parentData
+      +Template.dynamic template=activeTabTemplate
+  else
     +Template.dynamic template=activeTabTemplate
