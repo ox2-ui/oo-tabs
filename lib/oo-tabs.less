@@ -1,0 +1,23 @@
+@import "oo-color-variables.import.less";
+@import "oo-font-variables.import.less";
+
+[ooTabs] {
+  display: flex;
+  height: 4.4rem;
+}
+
+[ooTabs~="center"] {
+  justify-content: center;
+}
+
+[ooTab-item] {
+  flex: 1;
+  height: 100%;
+  border-bottom: 2px solid @white;
+  transition: border-bottom .3s;
+}
+
+[ooTab-item~="is-active:brand"] {
+  border-bottom-color: @brand;
+}
+
