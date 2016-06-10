@@ -1,7 +1,7 @@
 Package.describe({
   name: 'ox2:tabs',
   summary: 'TESTING_DO_NOT_USE Tab components',
-  version: '1.3.1',
+  version: '1.3.2',
   git: ' /* Fill me in! */ '
 });
 
